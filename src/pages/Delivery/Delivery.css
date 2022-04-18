@@ -1,0 +1,121 @@
+.delivery {
+}
+.delivery__container {
+  padding: 100px 120px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.delivery__title {
+  margin: 70px 0 35px;
+  text-align: left;
+}
+
+.delivery__title span {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 72, 72, 1) 0%,
+    rgba(170, 39, 39, 1) 100%
+  );
+
+  font-family: Geometria;
+  font-weight: 700;
+  font-size: 40px;
+}
+.delivery__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.delivery__left {
+  width: 50%;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+.delivery__text p {
+  margin-bottom: 15px;
+  font-family: Geometria;
+  font-weight: 500;
+  color: #3e3e3e;
+  line-height: 25px;
+}
+.delivery__text ul {
+  margin-bottom: 40px;
+}
+.delivery__text ul li {
+  font-family: Geometria;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+.delivery__text ul li span {
+  margin-right: 15px;
+}
+.delivery__right {
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+}
+.delivery__right--img {
+  width: 100%;
+  height: 300px;
+}
+.delivery__right--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* *********************************  MEDIA QUERY  *************************************** */
+/* *********************************  max-width: 1400px  *************************************** */
+@media (max-width: 1400px) {
+  .delivery__container {
+    padding: 100px 50px 80px;
+  }
+}
+
+/* *********************************  max-width: 1200px  *************************************** */
+@media (max-width: 1200px) {
+  .delivery__content {
+    flex-direction: column;
+  }
+  .delivery__title {
+    text-align: center;
+  }
+
+  .delivery__left {
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  .delivery__right {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* *********************************  max-width: 768px  *************************************** */
+
+@media (max-width: 768px) {
+  .delivery__container {
+    padding: 100px 20px 80px;
+  }
+  .delivery__left {
+    width: 100%;
+  }
+  .delivery__title span {
+    font-size: 24px;
+  }
+}
+
+/* *********************************  max-width: 575px  *************************************** */
+
+@media (max-width: 575px) {
+  .delivery__left {
+    padding: 10px;
+  }
+  .delivery__text {
+    font-size: 12px;
+  }
+}
