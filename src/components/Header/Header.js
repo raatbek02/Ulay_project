@@ -19,16 +19,13 @@ import {
 import CatalogModal from "../UI/Modal/CatalogModal";
 import Category from "../Main/Category/Category";
 import { setModalCatalog } from "../../store/modalCatalog";
-import axios from "axios";
 import { addSearchProducts } from "../../store/searchData";
 import "./Header.css";
 
 import cart_logo from "../../assets/images/cart_logo.svg";
 import compare_logo from "../../assets/images/compare_logo.svg";
-import login_logo from "../../assets/images/login_logo.svg";
 import lupa from "../../assets/images/new_design/lupa.svg";
-import catalog_logo from "../../assets/images/catalog_logo.svg";
-import header_logo from "../../assets/images/header/header_logo.png";
+
 import header_logo_svg from "../../assets/images/header/header_logo_svg.svg";
 
 import { $host } from "../../http";
@@ -362,10 +359,6 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
 
 // {/* <div className="header__left">
 //             <ul>
